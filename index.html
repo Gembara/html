@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Відьмаки</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
+
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
 </head>
+
 <body>
+
+    <h1>Відомі Відьмаки</h1>
+    <h2>Геральд</h2>\
+    <img src="img/gerald.jpg" alt="Gerald">
+
+    <h2>Весимир</h2>
+    <img src="img/vesimir.jpg" alt="Vesemir">
+
     <header class="header">
         <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
     </header>
-    <main class="main">
-        
-    </main>
-    <footer class="footer">
-        
-    </footer>
+
+    <main class="main"></main>
+
+    <footer class="footer"></footer>
+
 </body>
+
 </html>
